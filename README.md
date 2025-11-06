@@ -6,6 +6,14 @@
 
 A powerful command-line tool for searching text patterns across Kubernetes and OpenShift secrets. Designed for security auditing, compliance checks, configuration management, and troubleshooting.
 
+## 📚 Quick Navigation
+
+- **[📖 Complete Usage Guide](docs/USAGE.md)** - Comprehensive documentation with detailed examples
+- **[📋 Examples Reference](docs/EXAMPLES.md)** - Copy-paste ready commands for common scenarios
+- **[🚀 Quick Start](#-quick-start)** - Get started in 30 seconds
+- **[🛠️ Installation](#️-installation)** - Setup instructions
+- **[🎯 Common Use Cases](#-common-use-cases)** - Real-world examples
+
 ## ✨ Features
 
 - 🔍 **Multi-location Search**: Searches in secret names, data key names, and decoded data values
@@ -42,7 +50,7 @@ A powerful command-line tool for searching text patterns across Kubernetes and O
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/k8s-secret-scanner.git
+git clone https://github.com/ephico2real2/k8s-secret-scanner.git
 cd k8s-secret-scanner
 
 # Make the script executable
@@ -108,8 +116,9 @@ sudo ln -s $(pwd)/search-secrets.sh /usr/local/bin/k8s-secret-scanner
 
 ## 📖 Documentation
 
-- [Complete Usage Guide](docs/USAGE.md) - Comprehensive documentation with examples
-- [Examples Reference](docs/EXAMPLES.md) - Copy-paste ready commands for common scenarios
+For detailed information:
+- **[Complete Usage Guide](docs/USAGE.md)** - In-depth documentation with performance tips and error handling
+- **[Examples Reference](docs/EXAMPLES.md)** - Extended examples for security, compliance, and troubleshooting scenarios
 
 ## 🧪 Testing
 
@@ -157,7 +166,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 ### Development Setup
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/k8s-secret-scanner.git
+git clone https://github.com/ephico2real2/k8s-secret-scanner.git
 cd k8s-secret-scanner
 
 # Run tests
@@ -174,8 +183,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🆘 Support
 
 - 📖 Check the [Usage Guide](docs/USAGE.md) for detailed examples
-- 🐛 Report bugs via [GitHub Issues](https://github.com/yourusername/k8s-secret-scanner/issues)
-- 💡 Feature requests welcome via [GitHub Discussions](https://github.com/yourusername/k8s-secret-scanner/discussions)
+- 🐛 Report bugs via [GitHub Issues](https://github.com/ephico2real2/k8s-secret-scanner/issues)
+- 💡 Feature requests welcome via [GitHub Discussions](https://github.com/ephico2real2/k8s-secret-scanner/discussions)
 
 ## ⚡ Performance Tips
 
