@@ -8,6 +8,7 @@ A powerful command-line tool for searching text patterns across Kubernetes and O
 
 ## 📚 Quick Navigation
 
+- **[🚀 Simple Scanner Guide](docs/SIMPLE-SCANNER.md)** - Ultra-simple "run and done" scanner documentation
 - **[📖 Complete Usage Guide](docs/USAGE.md)** - Comprehensive documentation with detailed examples
 - **[📋 Examples Reference](docs/EXAMPLES.md)** - Copy-paste ready commands for common scenarios
 - **[🚀 Quick Start](#-quick-start)** - Get started in 30 seconds
@@ -16,7 +17,7 @@ A powerful command-line tool for searching text patterns across Kubernetes and O
 
 ## ✨ Features
 
-- 🚀 **Two Usage Modes**: Simple `scan.sh` for quick searches, full `search-secrets.sh` for enterprise use
+- 🚀 **Two Usage Modes**: Simple `simple-k8s-secrets-scanner.sh` for quick searches, full `search-secrets.sh` for enterprise use
 - 🔍 **Multi-location Search**: Searches in secret names, data key names, and decoded data values
 - 🏢 **Namespace Filtering**: Advanced filtering with skip patterns, only patterns, and system namespace control
 - 🛑️ **Security Focused**: Built for security audits, compliance checks, and sensitive data discovery
@@ -28,9 +29,9 @@ A powerful command-line tool for searching text patterns across Kubernetes and O
 
 ```bash
 # 🚀 SIMPLE: Just run and done
-./scan.sh password         # Find passwords 
-./scan.sh token            # Find tokens
-./scan.sh api prod         # Find "api" in prod namespaces only
+./simple-k8s-secrets-scanner.sh password         # Find passwords 
+./simple-k8s-secrets-scanner.sh token            # Find tokens
+./simple-k8s-secrets-scanner.sh api prod         # Find "api" in prod namespaces only
 
 # 🏢 ADVANCED: Full control (enterprise features)
 ./search-secrets.sh -n default -s token
@@ -116,6 +117,7 @@ sudo ln -s $(pwd)/search-secrets.sh /usr/local/bin/k8s-secret-scanner
 ## 📖 Documentation
 
 For detailed information:
+- **[Simple Scanner Guide](docs/SIMPLE-SCANNER.md)** - Ultra-simple "run and done" scanner with examples
 - **[Complete Usage Guide](docs/USAGE.md)** - In-depth documentation with performance tips and error handling
 - **[Examples Reference](docs/EXAMPLES.md)** - Extended examples for security, compliance, and troubleshooting scenarios
 
