@@ -16,9 +16,10 @@ A powerful command-line tool for searching text patterns across Kubernetes and O
 
 ## ✨ Features
 
+- 🚀 **Two Usage Modes**: Simple `scan.sh` for quick searches, full `search-secrets.sh` for enterprise use
 - 🔍 **Multi-location Search**: Searches in secret names, data key names, and decoded data values
 - 🏢 **Namespace Filtering**: Advanced filtering with skip patterns, only patterns, and system namespace control
-- 🛡️ **Security Focused**: Built for security audits, compliance checks, and sensitive data discovery
+- 🛑️ **Security Focused**: Built for security audits, compliance checks, and sensitive data discovery
 - 🚀 **Performance Optimized**: Efficient filtering to reduce noise and focus searches
 - 🎯 **Binary Data Handling**: Intelligently skips binary content while processing text data
 - 📊 **Comprehensive Reporting**: Detailed summaries with location tracking and statistics
@@ -26,16 +27,14 @@ A powerful command-line tool for searching text patterns across Kubernetes and O
 ## 🚀 Quick Start
 
 ```bash
-# Basic usage - search single namespace
+# 🚀 SIMPLE: Just run and done
+./scan.sh password         # Find passwords 
+./scan.sh token            # Find tokens
+./scan.sh api prod         # Find "api" in prod namespaces only
+
+# 🏢 ADVANCED: Full control (enterprise features)
 ./search-secrets.sh -n default -s token
-
-# Search all namespaces (with system filtering)
-./search-secrets.sh -A -s password
-
-# Search specific namespaces only
-./search-secrets.sh -A -s "api" --only-namespaces="prod,staging"
-
-# Include system namespaces for comprehensive search
+./search-secrets.sh -A -s password --only-namespaces="prod,staging" 
 ./search-secrets.sh -A -s ca.crt --include-system-namespaces
 ```
 
