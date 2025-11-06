@@ -13,7 +13,7 @@ echo ""
 results=$(kubectl get secrets --all-namespaces -o json 2>/dev/null | \
 jq -r --arg search "$SEARCH" --arg ns_pattern "$NS_PATTERN" '
 .items[] | 
-select(.metadata.namespace | test("^(kube-|openshift-|default)") | not) |
+select(.metadata.namespace | test("^(kube-|openshift-|default$|cert-manager|ibm-|calico-|tigera-|ingress-|monitoring-|logging-)") | not) |
 select(.metadata.namespace | test($ns_pattern)) |
 (.metadata.namespace + "/" + .metadata.name) as $id |
 (
